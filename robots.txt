@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delman567-login.0o0o0o0.online/sitemap.xml
