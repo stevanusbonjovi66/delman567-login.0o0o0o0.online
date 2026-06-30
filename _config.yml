@@ -1,0 +1,84 @@
+title: "delman567-login"
+title_separator: " - "
+description: "delman567-login — situs informasi resmi dengan blog, referensi, dan arahan ke domain utama."
+url: "https://delman567-login.0o0o0o0.online"
+official_site: "https://delman567.org"
+baseurl: ""
+lang: id_ID
+timezone: Asia/Jakarta
+markdown: gfm
+remote_theme: pages-themes/tactile
+
+permalink: /blog/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
+  - .bundle/
+  - .git/
+  - README.md
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-avatar
+  - jemoji
+  - jekyll-mentions
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+  - jekyll-include-cache
+  - jekyll-octicons
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+logo: "/assets/images/logo.svg"
+image: "/assets/images/og-default.svg"
+
+feed:
+  path: atom.xml
+  posts_limit: 10
+
+twitter:
+  card: summary_large_image
+
+relative_links:
+  enabled: true
+  collections: true
+
+title_from_headings:
+  enabled: true
+  collections: true
+  pages: true
+
+author:
+  name: "delman567-login"
+  url: "https://delman567-login.0o0o0o0.online"
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: "/assets/images/og-default.svg"
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+      author: "delman567-login"
+      image: "/assets/images/og-default.svg"
+
+github:
+  is_project_page: false
